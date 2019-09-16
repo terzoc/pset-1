@@ -21,7 +21,7 @@ public class ProblemSet1 {
          * 
          * What is the area (in square millimeters) of an 8.5-by-11-inch sheet of paper?
          */
-        
+        double pageLength = 11;
         
         
         /*
