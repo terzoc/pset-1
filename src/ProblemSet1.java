@@ -23,10 +23,9 @@ public class ProblemSet1 {
          */
         final double pageLength = 11;
         final double pageWidth = 8.5;
-        double pageAreaIn = pageWidth * pageLength;
-        final double squareIn2Mm = 645.16;
-        double pageAreaMm = pageAreaIn * squareIn2Mm;
-        System.out.printf("%,.2f square millimeters.", pageAreaMm);
+        final double in2Mm = 25.4;
+        double pageArea = (pageWidth * in2Mm) * (pageLength * in2Mm);
+        System.out.printf("\n%,.2f square millimeters \n", pageArea);
 
 
         /*
@@ -34,7 +33,9 @@ public class ProblemSet1 {
          *
          * What is the perimeter (in centimeters) of an 8.5-by-11-inch sheet of paper?
          */
-
+         final double in2Cm = 2.54;
+         double pagePerimeter = (pageLength * in2Cm * 2) + (pageWidth * in2Cm * 2);
+         System.out.printf("\n%.2f square millimeters.", pagePerimeter);
 
 
         /*
