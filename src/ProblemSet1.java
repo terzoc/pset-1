@@ -80,8 +80,9 @@ public class ProblemSet1 {
          * I make $12.50/hour working as a cashier at a local supermarket. How much money
          * will I make this week?
          */
-
-
+         final double HOURLY_WAGE = 12.5;
+         double totalPay = (7.5 + 8 + 10.5 + 9.5 + 6 + 11.5) * HOURLY_WAGE;
+         System.out.printf("\n$%.2f.\n", totalPay);
 
         /*
          * Exercise 6.
