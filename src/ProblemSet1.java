@@ -64,7 +64,14 @@ public class ProblemSet1 {
         int test1 = 74;
         int test2 = 87;
         int test3 = 82;
-
+        final double WEIGHT_HOMEWORK = .15;
+        final double WEIGHT_QUIZ = .35;
+        final double WEIGHT_TEST = .50;
+        double homeworkGrade = (homework1 + homework2 + homework3) * WEIGHT_HOMEWORK / 3;
+        double quizGrade = (quiz1 + quiz2 +quiz3) * WEIGHT_QUIZ / 3;
+        double testGrade = (test1 + test2 + test3) * WEIGHT_TEST / 3;
+        double finalGrade = homeworkGrade + quizGrade + testGrade;
+        System.out.printf("\n%.2f%%.\n", finalGrade);
 
 
         /*
