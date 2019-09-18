@@ -21,10 +21,10 @@ public class ProblemSet1 {
          *
          * What is the area (in square millimeters) of an 8.5-by-11-inch sheet of paper?
          */
-        final double pageLength = 11;
-        final double pageWidth = 8.5;
-        final double in2Mm = 25.4;
-        double pageArea = (pageWidth * in2Mm) * (pageLength * in2Mm);
+        final double PAGE_LENGTH = 11;
+        final double PAGE_WIDTH = 8.5;
+        final double IN_TO_MM = 25.4;
+        double pageArea = (PAGE_WIDTH * IN_TO_MM) * (PAGE_LENGTH * IN_TO_MM);
         System.out.printf("\n%,.2f square millimeters \n", pageArea);
 
 
@@ -33,9 +33,9 @@ public class ProblemSet1 {
          *
          * What is the perimeter (in centimeters) of an 8.5-by-11-inch sheet of paper?
          */
-         final double in2Cm = 2.54;
-         double pagePerimeter = (pageLength * in2Cm * 2) + (pageWidth * in2Cm * 2);
-         System.out.printf("\n%.2f square millimeters.", pagePerimeter);
+         final double IN_TO_CM = 2.54;
+         double pagePerimeter = (PAGE_WIDTH * IN_TO_CM * 2) + (PAGE_LENGTH * IN_TO_CM * 2);
+         System.out.printf("\n%.2f square centimeters.\n", pagePerimeter);
 
 
         /*
@@ -44,7 +44,8 @@ public class ProblemSet1 {
          * What is the length of the diagonal (in inches) between two corners on an 8.5-
          * by-11-inch sheet of paper?
          */
-
+         double pageDiagonal = Math.hypot(PAGE_WIDTH, PAGE_LENGTH);
+         System.out.printf("\n%.2f inches.\n", pageDiagonal);
 
 
         /*
