@@ -1,16 +1,9 @@
-/**
- * Problem Set 1.
+/*
+ * Copyright (c) 2019. UCVTS and its affiliated.
  *
- * It's time to put your skills to the test. This problem set focuses on using
- * primitive data types, variables, and basic operators and functions.
- *
- * The specifications for each exercise are outlined below. Your output is
- * expected to meet requirements set forth in this section (as well as the
- * Deliverables section).
- *
- * Work through these exercises on your own. Experiment, make mistakes, ask
- * questions, and fix your mistakes. It's the only way to get good at programming.
+ * Use is allowed as long as credit is given.
  */
+
 
 public class ProblemSet1 {
 
@@ -146,7 +139,10 @@ public class ProblemSet1 {
          *
          * What is the wind chill?
          */
-
+         final double TEMPERATRUE = 38;
+         final double WIND_SPEED = 14;
+         double windChill = (35.74 + 0.6215 * TEMPERATRUE + (0.4275 * TEMPERATRUE - 35.75) * Math.pow(WIND_SPEED,0.16));
+         System.out.printf("\n%,.1f degrees.\n", windChill);
 
 
     }
