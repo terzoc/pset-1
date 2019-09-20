@@ -35,7 +35,7 @@ public class ProblemSet1 {
          */
          final double IN_TO_CM = 2.54;
          double pagePerimeter = (PAGE_WIDTH * IN_TO_CM * 2) + (PAGE_LENGTH * IN_TO_CM * 2);
-         System.out.printf("\n%.2f square centimeters.\n", pagePerimeter);
+         System.out.printf("\n%.2f centimeters.\n", pagePerimeter);
 
 
         /*
@@ -95,7 +95,7 @@ public class ProblemSet1 {
          final double RETIREMENT_FUND = .07;
          double paycheck = SALARY / 24;
          double takeHomePay = paycheck * (1 - FEDERAL_TAX) * (1 - STATE_TAX) * (1 - RETIREMENT_FUND);
-         System.out.printf("\n$%.2f.\n", takeHomePay);
+         System.out.printf("\n$%,.2f.\n", takeHomePay);
 
 
         /*
@@ -118,7 +118,12 @@ public class ProblemSet1 {
          *
          * What is the surface area of a standard Cornhole board?
          */
-
+         final double BOARD_LENGTH = 48;
+         final double BOARD_WIDTH = 24;
+         final double HOLE_DIAMETER = 6;
+         double holeRadius = HOLE_DIAMETER/2;
+         double boardArea = (BOARD_LENGTH * BOARD_WIDTH) - (Math.PI * holeRadius * holeRadius);
+         System.out.printf("\n%,.2f square inches.\n", boardArea);
 
 
         /*
